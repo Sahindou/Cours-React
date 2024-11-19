@@ -20,7 +20,7 @@ const Users = () => {
         }
     }
 
-    //fecthData()
+    useEffect(() => {fecthData()}, [])
 
     return (
         <div>
