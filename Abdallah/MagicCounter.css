@@ -1,0 +1,122 @@
+/************************ css principale ***************************/
+
+.container_counter {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    /*background: linear-gradient(145deg, #e6e6e6, #ffffff);*/
+    background-color: #FDEDEC;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px #cccccc, -5px -5px 15px #ffffff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.container_counter h1 {
+    font-size: 1.8rem;
+    color: #0073e6;
+    margin-bottom: 15px;
+}
+
+.container_counter p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #444;
+}
+
+.container_counter p span {
+    display: block;
+    font-size: 0.9rem;
+    color: #ff6b6b;
+    margin-top: 5px;
+}
+
+.container_counter button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #0073e6;
+    color: white;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.container_counter button:hover {
+    background-color: #005bb5;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+.container_counter button:active {
+    background-color: #003f8c;
+    transform: scale(0.95);
+}
+
+
+/*************************** css avec active *********************/
+.container_counter_active{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    /*background: linear-gradient(145deg, #e6e6e6, #ffffff);*/
+    background-color: #D4F1F4;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px #cccccc, -5px -5px 15px #ffffff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+.container_counter_active h1 {
+    font-size: 1.8rem;
+    color: #0073e6;
+    margin-bottom: 15px;
+}
+
+.container_counter_active p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #444;
+}
+
+.container_counter_active p span {
+    display: block;
+    font-size: 0.9rem;
+    color: #ff6b6b;
+    margin-top: 5px;
+}
+
+.container_counter_active button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #0073e6;
+    color: white;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.container_counter_active button:hover {
+    background-color: #005bb5;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+.container_counter_active button:active {
+    background-color: #003f8c;
+    transform: scale(0.95);
+}
+
+/*******************************  la partie span    **********************************/
+
+.hidden_span{
+    visibility: hidden;
+}

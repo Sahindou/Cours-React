@@ -1,0 +1,14 @@
+.container_responsive{
+    max-width: 400px;
+    max-height: 400px;
+    height: 60px;
+    margin: 50px auto;
+    padding: 20px;
+    /*background: linear-gradient(145deg, #e6e6e6, #ffffff);*/
+    /*background-color: #FDEDEC;*/
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px #cccccc, -5px -5px 15px #ffffff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
