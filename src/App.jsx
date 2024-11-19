@@ -8,14 +8,12 @@ import NavBar from "./components/NavBar.jsx";
 import Users from "./components/Users.jsx";
 
 function App() {
-    //const isTrue = true;
-
   return (
     <BrowserRouter>
         {/*visible dans tous les routes possibles*/}
         <NavBar />
         <Routes>
-            <Route path="/" element={<h1>Accueil</h1>} />
+            <Route path="/" element={<h1>Bienvenue</h1>} />
             <Route path="/users" Component={Users} />
 
             {/*Dans un cas ou la route n'existe plus*/}

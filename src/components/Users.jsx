@@ -8,25 +8,29 @@ const Users = () => {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
 
-    //requete API
-    const fecthData = async () => {
-        try{
-            const response = await axios.get("https://jsonplaceholder.typicode.com/users")
-            setData(response.data)
-            setLoading(false)
-            console.log(response.data)
-        }catch(error){
-            console.log(error)
-        }
-    }
 
-    useEffect(() => {fecthData()}, [])
+
+    useEffect(() => {
+        //requete API
+        const fecthData = async () => {
+            try{
+                const response = await axios.get("https://jsonplaceholder.typicode.com/users")
+                setData(response.data)
+                setLoading(false)
+                //console.log(response.data)
+            }catch(error){
+                console.log(error)
+            }
+        }
+
+        fecthData()
+    }, [])
 
     return (
         <div>
             {loading && <CssLoader />}
             <ul>
-                {data.map(user => <li key={user.id}>{user.name}</li>)}
+                {data.map(user => <li key={user.id}>{user.email}</li>)}
             </ul>
         </div>
     )
