@@ -5,7 +5,8 @@ import './styles/App.css'
 
 //import components
 import NavBar from "./components/NavBar.jsx";
-import Users from "./components/Users.jsx";
+import HomeTpLivre from "./components/HomeTpLivre.jsx";
+import Post from "./components/Post.jsx";
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
         {/*visible dans tous les routes possibles*/}
         <NavBar />
         <Routes>
-            <Route path="/" element={<h1>Bienvenue</h1>} />
-            <Route path="/users" Component={Users} />
+            <Route path="/" Component={HomeTpLivre} />
+            <Route path="/post/:id" Component={Post} />
 
             {/*Dans un cas ou la route n'existe plus*/}
             <Route path="*" element={<h1>404</h1>} />

@@ -17,7 +17,7 @@ const Users = () => {
                 const response = await axios.get("https://jsonplaceholder.typicode.com/users")
                 setData(response.data)
                 setLoading(false)
-                //console.log(response.data)
+                //console.log(response.data) param; redux/ faire un tp : mettre router , page api, reduce , déployer sur gitpage, theme libre
             }catch(error){
                 console.log(error)
             }
