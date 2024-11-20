@@ -1,9 +1,9 @@
 import '../styles/Card.css'
 
-const Card = ({title, desc}) => {
+const Card = ({title, desc, img}) => {
     return (
         <>
-            {/**/}<img src="https://picsum.photos/150" alt="" className="image"/>
+            {/*https://picsum.photos/150*/}<img src={img} alt="" className="image"/>
             <div className="content">
                 <h3 className="title">{title}</h3>
                 <p className="description">{desc}</p>
