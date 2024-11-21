@@ -10,6 +10,7 @@ import HomeTp from "./components/HomeTp.jsx";
 import Post from "./components/Post.jsx";
 import Count from "./components/Count.jsx";
 import NotFound from "./components/NotFound.jsx";
+import CardDetailed from "./components/CardDetailed.jsx";
 
 function App() {
 
@@ -23,8 +24,7 @@ function App() {
             <div className={"container_main"}>
                 <Routes>
                     <Route path="/" Component={HomeTp}/>
-                    <Route path="/post/:id" Component={Post}/>
-                    <Route path="/count" Component={Count}/>
+                    <Route path="/articles/:id" Component={CardDetailed} />
 
                     {/*Dans un cas ou la route n'existe plus*/}
                     <Route path="*" Component={NotFound}/>

@@ -18,7 +18,7 @@ const HomeTp = () => {
     useEffect(() => {
         const fecthData = async () => {
             try{
-                const response = await axios.get("https://api.mediastack.com/v1/news?access_key=959120a3ed4e7bce1351929db57da9d9")
+                const response = await axios.get("https://api.mediastack.com/v1/news?access_key=dc3f1a86cd783eda35adc56e01564200")
                 dispatch(setArticles(response.data.data))
                 //console.log(response)
                 setLoading(false)
@@ -27,7 +27,7 @@ const HomeTp = () => {
             }
         }
 
-        //fecthData()
+        fecthData()
     }, [])
 
 
