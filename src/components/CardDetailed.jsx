@@ -12,7 +12,6 @@ const CardDetailed = () => {
     const [currentId, setCurrentId] = useState(parseInt(id));
 
 
-
     // Bouton Précédent
     const handlePrevious = () => {
         console.log(currentId)
@@ -31,15 +30,9 @@ const CardDetailed = () => {
 
 
 
-
-
-
-
     if (!articles.articles[currentId]) {
         return <NotFound />;
     }
-
-
 
 
     return (

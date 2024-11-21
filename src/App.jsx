@@ -11,6 +11,7 @@ import Post from "./components/Post.jsx";
 import Count from "./components/Count.jsx";
 import NotFound from "./components/NotFound.jsx";
 import CardDetailed from "./components/CardDetailed.jsx";
+import Search from "./components/Search.jsx";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
                 <Routes>
                     <Route path="/" Component={HomeTp}/>
                     <Route path="/articles/:id" Component={CardDetailed} />
+                    <Route path="/search" Component={Search}/>
 
                     {/*Dans un cas ou la route n'existe plus*/}
                     <Route path="*" Component={NotFound}/>
