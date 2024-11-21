@@ -27,7 +27,7 @@ const HomeTp = () => {
             }
         }
 
-        fecthData()
+        //fecthData()
     }, [])
 
 

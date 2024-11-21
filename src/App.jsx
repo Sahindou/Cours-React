@@ -9,6 +9,7 @@ import NavBar from "./components/NavBar.jsx";
 import HomeTp from "./components/HomeTp.jsx";
 import Post from "./components/Post.jsx";
 import Count from "./components/Count.jsx";
+import NotFound from "./components/NotFound.jsx";
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
                     <Route path="/count" Component={Count}/>
 
                     {/*Dans un cas ou la route n'existe plus*/}
-                    <Route path="*" element={<h1>404</h1>}/>
+                    <Route path="*" Component={NotFound}/>
                 </Routes>
             </div>
 
