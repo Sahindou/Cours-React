@@ -1,5 +1,5 @@
 const url_complet = (category, lang, keyword) => {
-    const baseUrl = 'https://api.mediastack.com/v1/news?access_key=dc3f1a86cd783eda35adc56e01564200';
+    const baseUrl = 'https://api.mediastack.com/v1/news?access_key=da7d3236b40f1d0576befaa5d88453c5';
 
     let params = [];
 

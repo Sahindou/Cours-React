@@ -4,9 +4,10 @@ import SearchTools from "./SearchTools.jsx";
 import {useSelector} from "react-redux";
 import Card from "./Card.jsx";
 import truncateText from "../utilitie/truncateText.js";
+import {useState} from "react";
 
 const Search = () => {
-    //const search
+    
     const articles = useSelector((state) => state.articles.articles)
     console.log(articles)
     return (
@@ -15,7 +16,7 @@ const Search = () => {
             <div className="container_card">
                 {
                     articles.map((article, key) => (
-                        <Card key={key} id={key} title={article.title} desc={truncateText(article.description, 100)}
+                        <Card key={key} id={key} title={truncateText(article.title, 50)} desc={truncateText(article.description, 100)}
                               img={article.image}/>
                     ))
                 }

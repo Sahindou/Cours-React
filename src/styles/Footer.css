@@ -5,6 +5,12 @@
     color: #333;
     border-top: 1px solid #ddd;
     font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Assure que le footer occupe toute la largeur */
+    z-index: 1000; /* S'assure que le footer reste au-dessus d'autres éléments */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
 }
 
 .footer p {

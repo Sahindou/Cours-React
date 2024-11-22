@@ -4,9 +4,10 @@ import {Link, useParams} from "react-router-dom";
 import {useSelector} from "react-redux";
 import NotFound from "./NotFound.jsx";
 import {useState} from "react";
+import InputLike from "./InputLike.jsx";
 
 const CardDetailed = () => {
-
+    //récuperation des params, etat_global_article, etat_local_currentId
     const {id} = useParams()
     const articles = useSelector((state) => state.articles)
     const [currentId, setCurrentId] = useState(parseInt(id));
@@ -29,7 +30,7 @@ const CardDetailed = () => {
     };
 
 
-
+    //si aucun article n'est dispo
     if (!articles.articles[currentId]) {
         return <NotFound />;
     }
@@ -46,11 +47,13 @@ const CardDetailed = () => {
 
             {/* Corps de la carte */}
             <div className="card-body">
-                <img
-                    src={articles.articles[currentId].image ? articles.articles[currentId].image : 'https://picsum.photos/400'}
-                    alt={articles.articles[currentId].title}
-                    className="article-image"
-                />
+                <div className={"container_image"}>
+                    <img
+                        src={articles.articles[currentId].image ? articles.articles[currentId].image : 'https://picsum.photos/400'}
+                        alt={articles.articles[currentId].title}
+                        className="article-image"
+                    />
+                </div>
                 <p className="article-description">
                     {articles.articles[currentId].description}
                 </p>
@@ -64,7 +67,7 @@ const CardDetailed = () => {
                     <strong>Date de publication :</strong> {new Date(articles.articles[currentId].published_at).toLocaleDateString()}
                 </p>
                 <Link to={articles.articles[currentId].url ? articles.articles[currentId].url : ()=>alert("Url non disponible!")} target={"_blank"}>Lire l'article complet</Link>
-
+                {/*<div ><InputLike /></div>*/}
             </div>
 
             {/* Pied de la carte */}

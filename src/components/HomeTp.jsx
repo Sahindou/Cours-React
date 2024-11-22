@@ -18,7 +18,7 @@ const HomeTp = () => {
     useEffect(() => {
         const fecthData = async () => {
             try{
-                const response = await axios.get("https://api.mediastack.com/v1/news?access_key=dc3f1a86cd783eda35adc56e01564200")
+                const response = await axios.get("https://api.mediastack.com/v1/news?access_key=da7d3236b40f1d0576befaa5d88453c5")
                 dispatch(setArticles(response.data.data))
                 //console.log(response)
                 setLoading(false)
@@ -42,7 +42,7 @@ const HomeTp = () => {
                             <div className="container_card">
                                 {
                                     articles.articles.map((article, key) => (
-                                        <Card key={key} id={key} title={article.title} desc={truncateText(article.description, 100)} img={article.image}/>
+                                        <Card key={key} id={key} title={truncateText(article.title, 50)} desc={truncateText(article.description, 100)} img={article.image}/>
                                     ))
                                 }
                             </div>

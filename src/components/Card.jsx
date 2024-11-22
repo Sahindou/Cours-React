@@ -1,5 +1,6 @@
 import '../styles/Card.css'
 import {Link} from "react-router-dom";
+import InputLike from "./InputLike.jsx";
 
 const Card = ({id, title, desc, img}) => {
     return (
@@ -9,6 +10,7 @@ const Card = ({id, title, desc, img}) => {
                 <div className="content">
                     <h3 className="title">{title}</h3>
                     <p className="description">{desc}</p>
+
                 </div>
             </div>
         </Link>
